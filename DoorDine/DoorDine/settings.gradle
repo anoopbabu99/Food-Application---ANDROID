@@ -1,0 +1,2 @@
+rootProject.name='DoorDine'
+include ':app'

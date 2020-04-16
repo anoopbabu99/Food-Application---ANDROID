@@ -1,0 +1,14 @@
+This file contains details about the project.
+
+1. The device used to debug this app was the OnePlus 7 Pro (6.67 inches).
+
+2. To match the screen size of my phone I used the Pixel 3 XL (6.3 inches) option while editing the XML files.
+
+3. The first_try variable in the forgot password page always gets a false value by the JSON file sent by the API, even if it is the first time we are asking for the OTP for that particular account. It is a bug from the API end.
+
+4. Two databases were used. One for the favorites page and one to pass the cart items from the restaurant menu to the cart Activity.
+
+5. Shared preferences were used for two things.
+i) to store all the details of the user as and when they log in or register.
+ii) along with the intent, I sent a boolean variable to notify the main activity that it must automatically open the favorites page (this was done to reflect the users preferences immediately).
+
