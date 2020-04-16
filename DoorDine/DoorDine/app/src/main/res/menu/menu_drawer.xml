@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--this XML file is for the menu items in the drawer:
+    the menu icons are also added here using built in icons
+    in image asset-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:id="@+id/myProfile"
+            android:title="@string/my_profile"
+            android:icon="@drawable/ic_person"
+            />
+        <item
+            android:id="@+id/favRestaurants"
+            android:title="@string/favorite_restaurants"
+            android:icon="@drawable/ic_fav"
+            />
+        <item
+            android:id="@+id/orderHistory"
+            android:title="@string/order_history"
+            android:icon="@drawable/ic_history"
+            />
+        <item
+            android:id="@+id/aboutApp"
+            android:title="@string/faqs"
+            android:icon="@drawable/ic_question"
+            />
+        <item
+            android:id="@+id/logout"
+            android:title="@string/log_out"
+            android:icon="@drawable/ic_logout"
+            />
+
+    </group>
+
+
+
+
+</menu>

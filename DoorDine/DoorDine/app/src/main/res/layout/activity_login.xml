@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/gifLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doordine"
+        android:layout_below="@+id/gifAnimation"
+        android:layout_marginTop="20dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:src="@drawable/food1"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:layout_below="@id/gifLogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/txtSignIn"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:hint="@string/phone_number"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/etPhoneNo"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:drawableLeft="@drawable/ic_lock_black_18dp"
+        android:drawableStart="@drawable/ic_lock_black_18dp"
+        android:hint="@string/password"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="6dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:padding="6sp"/>
+
+
+
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_to_doordine_register_here"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <!--PROGRESS BAR whilst data is getting fetched-->
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:elevation="10dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/txtSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signing_in"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#f44336"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

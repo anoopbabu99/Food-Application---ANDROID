@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/head">
+
+    <!--this XML file is for the drawer header of the drawer:-->
+    <ImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/img_android_logo" />
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/header"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

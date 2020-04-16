@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyProfileFragment"
+    android:background="@drawable/background_color">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/default_name"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_below="@+id/imgProfilePicture"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:padding="10dp"
+        android:text="@string/default_no"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/default_email"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPhone"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        />
+    <ImageView
+        android:id="@+id/imgProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/img_android_logo"
+        android:layout_margin="10dp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddress"
+        android:text="@string/address"
+        android:layout_below="@id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/txtDefaultAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/default_address"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtAddress"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+
+        />
+
+    <!--Button to check connectivity-->
+
+
+
+
+
+</RelativeLayout>

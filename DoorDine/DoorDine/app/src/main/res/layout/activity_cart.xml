@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.CartActivity"
+    android:id="@+id/drawerLayout"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayout"
+        >
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:elevation="0dp"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:id="@+id/toolBar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.06"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/txtOrderingFromText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:padding="10dp"
+                    android:paddingRight="3dp"
+                    android:text="Ordering from:"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txtOrderingFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:paddingLeft="3dp"
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.01"
+                android:id="@+id/txtHorizontalLine"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@id/txtOrderingFrom"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.74"
+                android:layout_below="@+id/txtHorizontalLine"
+                android:id="@+id/recyclerViewCart"/>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutProceedToCart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+
+                >
+
+                <Button
+                    android:id="@+id/btnPlaceOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/place_order"
+                    android:layout_margin="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--PROGRESS BAR whilst data is getting fetched-->
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/txtSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_executive_will_be_allocated_shortly"
+                android:layout_below="@id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#f44336"/>
+
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>

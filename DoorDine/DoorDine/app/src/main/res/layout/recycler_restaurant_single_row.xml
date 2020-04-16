@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:id="@+id/card"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="#e4bfef">
+
+
+    <RelativeLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <!--    NOTE:
+            you only need to design one view as the number of views is dynamic
+            (take the number of mails in an inbox for example)
+            and it avoid repeated creation of the same BLUEPRINT!!
+            THIS IS ALSO KNOWN AS CARD LAYOUT-->
+        <ImageView
+            android:id="@+id/imgRes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_android_logo"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/txtResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/restaurant_name"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/imgRes"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/rs_299"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_below="@+id/txtResName"
+            android:layout_toRightOf="@+id/imgRes"
+            android:textColor="#4caf50"/>
+
+        <ImageView
+            android:id="@+id/imgStar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/ic_star"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/txtstarCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/default_rating"
+            android:textColor="#ffeb3b"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/imgHeart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            />
+        <ImageView
+            android:id="@+id/imgHeart2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_favorite_black_18dp"
+            />
+
+
+        <!--    NOTE:
+        data for this fragment will come from the Kotlin file.
+        Adapter creates the view and binds the data then the
+        VIEW holder then holds the view. -->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
