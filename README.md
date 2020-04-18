@@ -1,7 +1,7 @@
 # Food Application-Android
 April 2020 Android Application Project
 
-Written in Kotlin and XML on Android Studio. 
+Written in Kotlin (back-end) and XML(front-end) on Android Studio. 
 This application is internet based. 
 
 It uses features like:
