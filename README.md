@@ -2,7 +2,7 @@
 April 2020 Android Application Project
 
 Written in Kotlin (back-end) and XML(front-end) on Android Studio. 
-This application is internet based. 
+This application uses the internet. 
 
 It uses features like:
 - Room (Google MySQLite inteface)
