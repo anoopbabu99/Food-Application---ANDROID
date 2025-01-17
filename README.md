@@ -20,3 +20,4 @@ The app includes pages such as:
 - My Favorites
 - Frequently Asked Questions... etc
 
+![Example from Repo](DoorDine/DoorDine/app/src/main/res/drawable/final_project_flow_chart.jpg "Local Image in Repo")
